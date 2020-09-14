@@ -58,6 +58,54 @@
 		{
 			height: 20rem;width: 100%;
 		}
+		textarea{height: 400px;
+		width: 100%;
+		font-size: 20px; color: red; 
+		padding: 2.5rem;
+		letter-spacing: 1px;
+		background-color: rgba(0,0,0,0.8); } 
+		textarea, 
+		iframe { 
+		    display: block; 
+		    margin: 10px 0; 
+		} 
+		  
+		iframe { 
+		    width: 100%;
+		    height: 500px; 
+		    border: 1px solid #000000; 
+		    background-color: #fff;
+		    } 
+		button {background-color: #0072FF;
+		        height: 50px;
+		        width: 120px;
+		        border: none;
+		        border-radius: 5px;
+		        outline: none;
+		       color: #fff;
+		        font-size: 20px;
+		        margin-left: calc(50%);
+		        transform: translate(-50%);}
+		.add {
+			height: 120px;
+			width: 720px; 
+			margin-left: calc(50%); 
+			transform: translate(-50%);
+			border: 2px solid #fff;
+			}
+		.cl {
+			height: 300px;
+			width: 320px;
+			margin-left: calc(50%);
+			transform: translate(-50%);
+			border: 2px solid black   
+			}
+		.out {height: 50px;
+			width: 320px;
+			font-size: 30px;
+			margin-left: calc(50%);
+			transform: translate(-50%);
+		}
 	</style>
 
 
@@ -103,11 +151,35 @@
 	</div>
 </div>
 <div class="main headerr container">
-	<div class="alert"></div>
-	<div class="alert alert-success">
-		<h1>Ya! The techno Akd HTML editor is comming soon. Its a online code editor. Here you edit HTML,CSS,JavaScript And also preview live.</h1>
-	</div>
-	<div class="space"></div>
+	<textarea rows="2" cols="40" >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>   
+      </textarea>
+      
+        <button type="button" onclick="updateIframe()"> 
+          RuN
+      </button> 
+        <iframe style="text-align:center;" id="myframe"></iframe> </div>
+        <h1 style="color: #602f9d; text-align: center; font-family: Lucida Handwriting">Choice your CSS color</h1>
+        <br>
+        <input class="cl" type="color" id="send" oninput="result.value=send.value"><br><br><br><input class="out" type="text" id="result"><br><br>
+        <script type="text/javascript"> 
+            function updateIframe() { 
+                var myFrame = $("#myframe").contents().find('body'); 
+                var textareaValue = $("textarea").val(); 
+                myFrame.html(textareaValue); 
+            } 
+        </script> 
+    </center>
 </div>
 
 
