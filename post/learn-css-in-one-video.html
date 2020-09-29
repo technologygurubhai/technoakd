@@ -33,14 +33,78 @@
 			text-decoration: none;
 			color: #fff;
 		}
+		.sidebar {
+		  margin: 0;
+		  padding: 0;
+		  width: 200px;
+		  background-color: #f1f1f1;
+		  position: fixed;
+		  height: 100%;
+		  overflow: auto;
+		}
+
+		.sidebar a {
+		  display: block;
+		  color: black;
+		  padding: 16px;
+		  text-decoration: none;
+		}
+		 
+		.sidebar a.active {
+		  background-color: #4CAF50;
+		  color: white;
+		}
+
+		.sidebar a:hover:not(.active) {
+		  background-color: #555;
+		  color: white;
+		}
+
+		div.content {
+		  margin-left: 200px;
+		  height: 1000px;
+		}
+
+		@media screen and (max-width: 700px) {
+		  .sidebar {
+		    width: 100%;
+		    height: auto;
+		    position: relative;
+		  }
+		  .sidebar a {float: left;}
+		  div.content {margin-left: 0;}
+		}
+
+		@media screen and (max-width: 400px) {
+		  .sidebar a {
+		    text-align: center;
+		    float: none;
+		  }
+		}
+		html
+		{
+			scroll-behavior: smooth;
+		}
 	</style>
 </head>
 <body>
+	<div class="sidebar">
+<p class="text-center"><b>Containt</b></p>
+  <a href="#cssone">
+  	<h5>Learn csss in video in hindi language</h5>
+  	<h6>The tutorial for learning css in one video watch the video till end. After watching you learn the css poperly</h6>
+  	<hr>
+  </a>
+</div>
+	<!--sidenavclose-->
+	
+	<div class="content">
 <nav>
 	<a href="index.html"><h1 class="text-center">Techno Akd</h1></a>
 	<h6 class="text-center mnu"><a href="../index.html">Home</a> <a href="../video.html">Video</a></h6>
 </nav>
 <div class="container-fluid">
+	<div id="cssone">
 	<div class="embed-responsive embed-responsive-16by9">
   			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ib4_LszkxyM" allowfullscreen></iframe>
 	</div>
@@ -122,8 +186,10 @@ img
 			</code>
 		</pre>
 	</div>
-
-</div>
+	<!--cssonevideoclose-->
+	</div>
+	<!--content-->
+	</div>
 <script src="prism.js"></script>
 </body>
 </html>
