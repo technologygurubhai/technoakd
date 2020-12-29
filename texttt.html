@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+	<button class="mctech" id="test4"><i class="fa fa-microphone" style="margin-right: 1rem;"></i>Screen Reader</button><br/><br/>
+ <script>
+
+      document.getElementById('test4').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "accessibility"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+</body>
+</html>
