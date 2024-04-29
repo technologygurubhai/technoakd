@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/style.css">
     <link type="image/png" sizes="32x32" rel="icon" href="images/Logos/favicon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Services</title>
 </head>
+
 <body>
     <nav id="navbar" class="flex items-center justify-between flex-wrap bg-blue-900 p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -34,10 +33,12 @@
                 <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
                     About
                 </a>
-                <a href="service.html" class="active block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+                <a href="service.html"
+                    class="active block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
                     Services
                 </a>
-                <a href="index.html#attachments" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+                <a href="index.html#attachments"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
                     Attachments
                 </a>
             </div>
@@ -127,7 +128,7 @@
                 </div>
                 <div class="text-center pt-8">
                     <div class="dropdown inline-block relative">
-                        <button class="bg-blue-600 text-white py-2 px-8 rounded shadow-lg" id="appointment">
+                        <button class="bg-blue-600 text-white py-2 px-8 rounded shadow-lg" onclick="showDialog()">
                             Book Appointment &nbsp;<i class="fa-solid fa-angle-down"></i>
                         </button>
                         <ul id="dropdown-menu"
@@ -162,6 +163,63 @@
                     </div>
                 </div>
             </div>
+
+
+            <div id="dialogWrapper" class="hidden inset-0 z-50 flex items-center justify-center">
+                <!-- Background overlay -->
+                <div id="dialogOverlay" class="fixed inset-0 bg-black opacity-50"></div>
+
+                <!-- Dialog container -->
+                <div id="di_cont" class="bg-white p-6 rounded-lg shadow-xl z-50">
+                    <!-- Dialog content -->
+                    <div class="text-lg font-semibold mb-4">Dialog Title</div>
+                    <div class="text-gray-700">
+                        <ul id="" class="  bg-blue-600 text-white mt-4 mb-8 rounded">
+                            <li>
+                                <a onclick="return confirm('Do you want to call CMRI?')" href="tel:03340904090"
+                                    class="block py-2 px-4 border-b-2 border-white hover:bg-blue-900">
+                                    <i class="fa-solid fa-phone"></i> &nbsp;CMRI
+                                </a>
+                            </li>
+                            <li>
+                                <a onclick="return confirm('Do you want to call Eastern Diagnostics?')"
+                                    href="tel:03346001706"
+                                    class="block py-2 px-4 border-b-2 border-white hover:bg-blue-900">
+                                    <i class="fa-solid fa-phone"></i> &nbsp;Eastern Diagnostics
+                                </a>
+                            </li>
+                            <li>
+                                <a onclick="return confirm('Do you want to call Welcare Medical Centre?')"
+                                    href="tel:+918820556699"
+                                    class="block py-2 px-4 border-b-2 border-white hover:bg-blue-900">
+                                    <i class="fa-solid fa-phone"></i> &nbsp;Welcare Medical
+                                </a>
+                            </li>
+                            <li>
+                                <a onclick="return confirm('Do you want to call Nabanir Hospital?')"
+                                    href="tel:+919836006000" class="block py-2 px-4 hover:bg-blue-900">
+                                    <i class="fa-solid fa-phone"></i> &nbsp;Nabanir Hospital
+                                </a>
+                            </li>
+                        </ul>
+
+
+
+
+                    </div>
+
+                    <!-- Buttons or additional content -->
+                    <div class="mt-4 flex justify-end">
+                        <button onclick="hideDialog()"
+                            class="w-full px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
         </section>
     </main>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -181,6 +239,24 @@
             prevScrollpos = currentScrollPos;
         }
 
+        const dialogWrapper = document.getElementById('dialogWrapper');
+        const dialogOverlay = document.getElementById('dialogOverlay');
+
+        dialogOverlay.addEventListener('click', (event) => {
+            if (event.target === dialogOverlay) {
+                hideDialog();
+            }
+        });
+
+        function showDialog() {
+            dialogWrapper.classList.remove('hidden');
+        }
+
+        function hideDialog() {
+            dialogWrapper.classList.add('hidden');
+        }
+
     </script>
 </body>
+
 </html>
