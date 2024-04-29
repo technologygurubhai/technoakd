@@ -1,0 +1,71 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  } */
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #e0eafc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #cfdef3,
+      #e0eafc
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #cfdef3,
+      #e0eafc
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  
+  footer {
+    /* max-width: 1300px; */
+    margin: 20px auto;
+  }
+  
+  #header-logo img,
+  #footer-logo img {
+    height: 40px;
+    width: 40px;
+  }
+  
+  #home {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #profile-img {
+    height: 150px;
+    width: 150px;
+  }
+  
+  #photos,
+  #attachments {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  #howrah {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .active{
+    color: #ffd900 !important;
+    font-weight: bolder;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    transition: top 0.3s;
+  }
+  #photos{
+    transition: 1s linear ;
+  }
