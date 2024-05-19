@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Bangiyo Gurukul Ashram</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .top_nav {
             background-color: rgb(10, 90, 250);
@@ -18,7 +20,7 @@
         }
 
         .branding {
-            margin-top: 40px;
+            margin-top: 60px;
             padding: 20px;
             background-color: rgba(226, 229, 231, 0.449);
         }
@@ -43,7 +45,7 @@
             height: 620px;
         }
 
-        
+
 
         .cource_head_bar h2 {
             background-color: blue;
@@ -71,12 +73,14 @@
         .foot_cont {
             padding: 25px 5px;
         }
-        .chatbox_btn{
+
+        .chatbox_btn {
             position: fixed;
             right: 10px;
             bottom: 50px;
         }
-        .chatbox{
+
+        .chatbox {
             width: 25%;
             box-shadow: 10px 10px 100px;
             border-radius: 15px;
@@ -90,27 +94,33 @@
             display: none;
             text-wrap: nowrap;
         }
-        .chat-header{
+
+        .chat-header {
             display: flex;
         }
-        .chat-title{
+
+        .chat-title {
             margin: 5px 0px;
         }
-        .chat-header button{
+
+        .chat-header button {
             margin: 5px;
             margin-left: 65%;
             /* justify-content: right; */
         }
+
         @media only screen and (max-width: 600px) {
             .carousel-item img {
                 height: 220px;
             }
+
             .branding h1 {
-            font-size: 2rem;
-            font-weight: bolder;
-            text-align: center;
-        }
-            .chatbox{
+                font-size: 2rem;
+                font-weight: bolder;
+                text-align: center;
+            }
+
+            .chatbox {
                 width: 80%;
                 text-wrap: nowrap;
             }
@@ -123,9 +133,12 @@
 <body>
     <div class="top_nav p-2">
         <ul class="nav justify-content-end">
-            <li class="px-2">Call</li>
-            <li class="px-2">Whatsapp</li>
-            <li class="px-2">Facebok</li>
+            <li class=""><a class="nav-link color-white" style="color: #fff;" href="tel:+918100040601">Call</a></li>
+            <li class=""><a class="nav-link color-white" style="color: #fff;"
+                    href="https://wa.me/+918100040601">Whatsapp</a></li>
+            <li class=""><a class="nav-link color-white" style="color: #fff;"
+                    href="https://www.facebook.com/profile.php?id=100081674114162&paipv=0&eav=AfZY7Xm_q8oDzcXjiw8pJRJnO0rF7Uwl7iBKgkKQiFIU4RlBK2qs_7e1XrZpQlElSa0">Facebok</a>
+            </li>
         </ul>
     </div>
     <div class="branding">
@@ -179,27 +192,29 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
-            <button id="chat_btn" class="btn btn-primary chatbox_btn"><i class="fa fa-commenting" aria-hidden="true"></i></button>
-            <div class="chatbox" id="chat-box">
-                <div class="chat-header">
-                    <h5 class="chat-title" id="">Chat box</h5>
-                    <button type="button ml-4" onclick="cloe_chat()" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <hr>
-                  <div class="chat-body">
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Name</label>
-                          <input type="text" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Mobile number</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1">
-                          </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
-                  </div>
+        <button id="chat_btn" class="btn btn-primary chatbox_btn"><i class="fa fa-commenting"
+                aria-hidden="true"></i></button>
+        <div class="chatbox" id="chat-box">
+            <div class="chat-header">
+                <h5 class="chat-title" id="">Chat box</h5>
+                <button type="button ml-4" onclick="cloe_chat()" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
             </div>
+            <hr>
+            <div class="chat-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Mobile number</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
 
         <div class="apply_section py-4">
             <h2 class="text-center my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
@@ -209,43 +224,46 @@
                 </button>
             </div>
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Apply now</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <h3 class="text-primary text-center">ADMISSIONS OPEN 2024-25</h3>
-                      <h4 class="text-center">Contact : +918100040601</h4>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Apply now</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h3 class="text-primary text-center">ADMISSIONS OPEN 2024-25</h3>
+                            <h4 class="text-center">Contact : +918100040601</h4>
 
-                        <form>
-                            <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">Name</label>
-                              <input type="text" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Mobile number</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1">
-                              </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                          </form>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Mobile number</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
 
 
-                    </div>
-                    <!-- <div class="modal-footer">
+                        </div>
+                        <!-- <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                       <button type="button" class="btn btn-primary">Save changes</button>
                     </div> -->
-                  </div>
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
     <footer class="bg-dark text-white">
@@ -273,11 +291,11 @@
         </div>
     </footer>
     <script>
-        document.getElementById('chat_btn').addEventListener('click', function() {
+        document.getElementById('chat_btn').addEventListener('click', function () {
             // alert("Helllo");
             document.getElementById('chat-box').style.display = 'block';
         });
-        function cloe_chat(){
+        function cloe_chat() {
             document.getElementById('chat-box').style.display = 'none';
         }
     </script>
