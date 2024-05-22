@@ -1,0 +1,182 @@
+.top_nav {
+    background-color: rgb(10, 90, 250);
+    box-shadow: 0px 2px 30px black;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    /* height: 20px; */
+}
+
+.top_nav a {
+    color: #fff;
+    font-weight: bold;
+    transition: 0.2s linear;
+}
+
+.top_nav a:hover {
+    color: rgb(1, 1, 46);
+    font-weight: bolder;
+}
+
+.branding {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(226, 229, 231, 0.449);
+}
+
+.branding marquee {
+    color: red;
+    font-weight: bolder;
+}
+
+.branding h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.carousel-inner {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+
+
+.cource_head_bar h2 {
+    background-color: #0074d9;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    width: auto;
+    border-radius: 18px;
+}
+
+
+.cource_head_bar .cource_bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    background-color: rgba(0, 106, 255, 0.277);
+    border: 2px solid #fff;
+    border-radius: 12px;
+    transition: 0.5s linear;
+}
+.cource_bars:hover{
+    box-shadow: 0px 2px 3px black;
+}
+
+.cource_head_bar .row div:nth-child(odd) {
+    background-color: rgba(135, 142, 248, 0.386);
+}
+
+.foot_cont {
+    padding: 25px 5px;
+}
+
+.chatbox_btn {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+}
+
+.chatbox {
+    width: 25%;
+    box-shadow: 10px 10px 100px;
+    border-radius: 15px;
+    padding: 15px;
+    position: fixed;
+    right: 8px;
+    bottom: 45px;
+    background-color: #fff;
+    z-index: 99999999;
+    transition: 2s ease-in;
+    display: none;
+    text-wrap: nowrap;
+}
+
+.chat-header {
+    display: flex;
+}
+
+.chat-title {
+    margin: 5px 0px;
+}
+
+.chat-header button {
+    margin: 5px;
+    margin-left: 65%;
+    /* justify-content: right; */
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-item img {
+        height: 220px;
+    }
+
+    .branding h1 {
+        font-size: 2rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .chatbox {
+        width: 80%;
+        text-wrap: nowrap;
+    }
+}
+
+i.fa-envelope,
+.col-sm-4 i.fa-phone {
+    margin-right: 10px;
+    color: #0074d9;
+}
+
+.image-container {
+    cursor: pointer;
+    
+}
+.image-container img{
+    border-radius: 12px;
+    transition: 0.5s ease-in-out;
+}
+.details{
+    transition: 0.5s linear;
+}
+
+.image-container .details {
+    margin-top: 20%;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.image-container:hover .details {
+    display: block;
+    opacity: 1;
+}
+
+.image-container:hover .image {
+    display: none;
+}
+.foot_cont {
+    padding: 25px 5px;
+}
+.active{
+    color: blue;
+}
+.main{
+    min-height: 50vh;
+    flex-direction: column;
+}
