@@ -1,0 +1,216 @@
+*{
+    /* font-family: 'Poppins', sans-serif; */
+}
+* a{
+    color: rgb(255, 21, 21);
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+nav{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.row{
+    width: 100%;
+    /* background-color: red; */
+}
+.carousel-inner {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+.intro{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro button{
+    border: none;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-weight: bold;
+    background-color: rgba(191, 255, 0, 0.325);
+    transition: background-color 0.5s ease, width 1s;
+}
+.intro button:hover{
+    background-color: rgba(255, 0, 0, 0.586);
+    color: #fff;
+    font-weight: bold;
+    transition:  background-color 0.5s ease, width 1s;
+}
+.intro h2{
+    
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.exam_ele{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+    background-color: rgb(110, 107, 107);
+    transition: 0.5s ease-out;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px;
+}
+.exam_cont .row div:nth-child(odd) {
+    background-color: rgba(136, 143, 241, 0.386);
+}
+.couerces{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10%; */
+}
+.couerces h2{
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+.couerces-wrap{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.couerces-wrap .row{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+.crc_list{
+    background-color: rgba(228, 227, 227, 0.404);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    transition: background-color 0.5s ease, width 1s;
+}
+.crc_list .icons{
+    font-size: 3rem;
+    /* color: rgba(255, 204, 0, 0.793); */
+}
+.crc_list .context{
+    /* color: rgba(255, 204, 0, 0.793); */
+    font-weight: bold;
+    /* font-size: 3rem; */
+}
+
+.crc_list .more{
+    position: relative;
+    top: -20px;
+    left: -30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    animation: grow 2s forwards;
+    display: none;
+}
+.crc_list:hover {
+    background-color: rgba(191, 255, 0, 0.325);
+    background-image: linear-gradient(45deg, rgba(255, 234, 0, 0.325),rgba(228, 227, 227, 0.404));
+    /* display: block; */
+    transition: background-color 0.5s ease, width 1s;
+}
+
+@keyframes grow {
+    from {
+        width: 10px;
+        height: 10px;
+    }
+    to {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+footer a {
+    color: #fff;
+    transition: background-color 0.5s ease, width 1s;
+}
+
+footer a:hover {
+    color: #d5d2d2;
+    transition: background-color 0.5s ease, width 1s;
+}
+.socail-box{
+    display: flex;
+}
+.social-logo{
+    padding: 5xp;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px 15px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: rgba(77, 76, 76, 0.874);
+    color: white;
+    transition: background-color 0.5s ease, width 1s;
+}
+
+.social-logo:hover{
+    background-color: orange;
+    transition: background-color 0.5s ease, width 1s;
+}
+
+.fac_card{
+    padding: 10px;
+    background-color: #eee9e9;
+    border-radius: 8px;
+    /* transition: background-color 2s ease, width 1s; */
+    transition: 10s ease-in-out;
+    /* height: ; */
+}
+.fac_card .image{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: 5s ease-in-out;
+    /* top: -50px; */
+    /* border-radius: 50%; */
+}
+.fac_card .image:hover{
+    top: -50px;
+    transition: 5s ease-in-out;
+}
+.fac_card .image img{
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+}
+.fac-card-content{
+    margin-top: 10%;
+    text-align: center;
+}
+.facalties{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.crc_list{
+    width: 520px;
+}
