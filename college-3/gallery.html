@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Gurukul Institute of Nursing</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    <style>
+        .hero {
+            position: relative;
+            background-image: url('images/college.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Adjust the opacity as needed */
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .gallery-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+
+        .gallery-image img {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .gallery-image:hover img {
+            opacity: 0;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            width: 90%;
+            height: 90%;
+        }
+
+        .gallery-image:hover .image-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-xl font-bold">Gurukul Institute of Nursing</a>
+            <div class="block md:hidden">
+                <button id="nav-toggle" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden md:flex space-x-4" id="nav-content">
+                <a href="/" class="text-white">Home</a>
+                <a href="about.html" class="text-white">About</a>
+                <a href="cources.html" class="text-white">Courses</a>
+                <a href="gallery.html" class="text-white">Gallery</a>
+                <a href="contact.html" class="text-white">Contact</a>
+            </div>
+        </div>
+        <div id="mobile-nav-content" class="md:hidden hidden">
+            <a href="/" class="block text-white p-4">Home</a>
+            <a href="about.html" class="block text-white p-4">About</a>
+            <a href="cources.html" class="block text-white p-4">Courses</a>
+            <a href="gallery.html" class="block text-white p-4">Gallery</a>
+            <a href="contact.html" class="block text-white p-4">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="text-4xl md:text-6xl font-bold">Welcome to Gurukul Institute of Nursing</h1>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Gallery</h2>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Image 1 -->
+                <div class="gallery-image">
+                    <img src="images/college.jpeg" alt="Image 1" class="w-full h-auto">
+                    <div class="image-overlay">
+                        <h3 class="text-xl font-semibold mb-2">Image 1 Title</h3>
+                        <p class="text-gray-200">Description of Image 1 Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Quae, commodi!</p>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="gallery-image">
+                    <img src="images/fesility.jpeg" alt="Image 2" class="w-full h-auto">
+                    <div class="image-overlay">
+                        <h3 class="text-xl font-semibold mb-2">Image 2 Title</h3>
+                        <p class="text-gray-200">Description of Image 2 Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Quae, commodi!</p>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="gallery-image">
+                    <img src="images/lab-3.jpeg" alt="Image 3" class="w-full h-auto">
+                    <div class="image-overlay">
+                        <h3 class="text-xl font-semibold mb-2">Image 3 Title</h3>
+                        <p class="text-gray-200">Description of Image 3 Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Quae, commodi!</p>
+                    </div>
+                </div>
+
+
+                <!-- Add more images as needed -->
+            </div>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-6">
+                <!-- Image 1 -->
+                <div class="gallery-image">
+                    <img src="images/college.jpeg" alt="Image 1" class="w-full h-auto">
+                    <div class="image-overlay">
+                        <h3 class="text-xl font-semibold mb-2">Image 1 Title</h3>
+                        <p class="text-gray-200">Description of Image 1 Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Quae, commodi!</p>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="gallery-image">
+                    <img src="images/fesility.jpeg" alt="Image 2" class="w-full h-auto">
+                    <div class="image-overlay">
+                        <h3 class="text-xl font-semibold mb-2">Image 2 Title</h3>
+                        <p class="text-gray-200">Description of Image 2 Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Quae, commodi!</p>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="gallery-image">
+                    <img src="images/lab-3.jpeg" alt="Image 3" class="w-full h-auto">
+                    <div class="image-overlay">
+                        <h3 class="text-xl font-semibold mb-2">Image 3 Title</h3>
+                        <p class="text-gray-200">Description of Image 3 Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Quae, commodi!</p>
+                    </div>
+                </div>
+
+
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-grey-600 body-gray-200  mt-6">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="images/logo.png" height="50px" width="50px" alt="logo">
+                <span class="ml-3 text-xl">Gurukul Institute of Nursing</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2024 Gurukul —
+                <a href="https://techanirbankundu.github.io/aniterminal/" class="text-gray-600 ml-1"
+                    rel="noopener noreferrer" target="_blank">@AniTerminal</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="https://wa.me/+918100040601" class="text-gray-500">
+                    <i class="fa fa-whatsapp text-2xl" aria-hidden="true"></i><span class="m-3 mb-3">8100040601</span>
+                </a>
+                <a href="tel:8100040601" class="ml-3 text-gray-500">
+                    <i class="fa fa-phone-square text-2xl" aria-hidden="true"></i><span class="m-3">8100040601</span>
+                </a>
+
+            </span>
+        </div>
+    </footer>
+    <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('nav-toggle').onclick = function () {
+            var navContent = document.getElementById('mobile-nav-content');
+            if (navContent.classList.contains('hidden')) {
+                navContent.classList.remove('hidden');
+            } else {
+                navContent.classList.add('hidden');
+            }
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gurukul Institute of Nursing</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    <style>
+        .hero {
+            position: relative;
+            background-image: url('images/college.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Adjust the opacity as needed */
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-xl font-bold">Gurukul Institute of Nursing</a>
+            <div class="block md:hidden">
+                <button id="nav-toggle" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden md:flex space-x-4" id="nav-content">
+                <a href="/" class="text-white">Home</a>
+                <a href="about.html" class="text-white">About</a>
+                <a href="cources.html" class="text-white">Courses</a>
+                <a href="gallery.html" class="text-white">Gallery</a>
+                <a href="contact.html" class="text-white">Contact</a>
+            </div>
+        </div>
+        <div id="mobile-nav-content" class="md:hidden hidden">
+            <a href="/" class="block text-white p-4">Home</a>
+            <a href="about.html" class="block text-white p-4">About</a>
+            <a href="cources.html" class="block text-white p-4">Courses</a>
+            <a href="gallery.html" class="block text-white p-4">Gallery</a>
+            <a href="contact.html" class="block text-white p-4">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="text-4xl md:text-6xl font-bold">Welcome to Gurukul Institute of Nursing</h1>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">About Us</h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-4">
+                Welcome to Gurukul Institute of Nursing, where excellence in nursing education meets compassionate care.
+                Our institution is dedicated to nurturing the next generation of healthcare professionals through
+                comprehensive programs in Bachelor of Science in Nursing (BSc Nursing) and General Nursing and Midwifery
+                (GNM).
+            </p>
+            <p class="text-lg md:text-xl text-gray-700 mb-4">
+                At Gurukul Institute of Nursing, we believe in fostering a supportive learning environment that empowers
+                students to excel in both theoretical knowledge and practical skills. Our state-of-the-art facilities
+                and experienced faculty ensure that students receive a well-rounded education that prepares them for the
+                dynamic challenges of the healthcare industry.
+            </p>
+            <p class="text-lg md:text-xl text-gray-700 mb-4">
+                Our BSc Nursing program provides a rigorous curriculum covering a wide range of subjects including
+                anatomy, physiology, pharmacology, nursing ethics, and clinical practice. Students engage in hands-on
+                learning experiences in various healthcare settings, gaining invaluable real-world exposure.
+            </p>
+            <p class="text-lg md:text-xl text-gray-700 mb-4">
+                Similarly, our GNM program equips students with the essential skills and knowledge required to deliver
+                competent nursing care with empathy and professionalism. Through a combination of classroom instruction
+                and clinical rotations, GNM students develop the expertise to provide comprehensive healthcare services
+                to individuals, families, and communities.
+            </p>
+            <p class="text-lg md:text-xl text-gray-700 mb-4">
+                At Gurukul Institute of Nursing, we prioritize student success and holistic development. Our dedicated
+                faculty members are committed to mentoring and guiding students every step of the way, ensuring that
+                they graduate as confident and competent nursing professionals.
+            </p>
+            <p class="text-lg md:text-xl text-gray-700 mb-4">
+                Whether you aspire to pursue a career in patient care, nursing management, research, or academia,
+                Gurukul Institute of Nursing provides the foundation for your future success. Join us in our mission to
+                make a difference in the lives of others through the noble profession of nursing.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-grey-600 body-gray-200  mt-6">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="images/logo.png" height="50px" width="50px" alt="logo">
+                <span class="ml-3 text-xl">Gurukul Institute of Nursing</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2024 Gurukul —
+                <a href="https://techanirbankundu.github.io/aniterminal/" class="text-gray-600 ml-1"
+                    rel="noopener noreferrer" target="_blank">@AniTerminal</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="https://wa.me/+918100040601" class="text-gray-500">
+                    <i class="fa fa-whatsapp text-2xl" aria-hidden="true"></i><span class="m-3 mb-3">8100040601</span>
+                </a>
+                <a href="tel:8100040601" class="ml-3 text-gray-500">
+                    <i class="fa fa-phone-square text-2xl" aria-hidden="true"></i><span class="m-3">8100040601</span>
+                </a>
+
+            </span>
+        </div>
+    </footer>
+    <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('nav-toggle').onclick = function () {
+            var navContent = document.getElementById('mobile-nav-content');
+            if (navContent.classList.contains('hidden')) {
+                navContent.classList.remove('hidden');
+            } else {
+                navContent.classList.add('hidden');
+            }
+        };
+    </script>
+</body>
+
+</html>

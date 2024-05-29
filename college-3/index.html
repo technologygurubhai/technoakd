@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-xl font-bold">Gurukul Institute of Nursing</a>
+            <div class="block md:hidden">
+                <button id="nav-toggle" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden md:flex space-x-4" id="nav-content">
+                <a href="/" class="text-white">Home</a>
+                <a href="about.html" class="text-white">About</a>
+                <a href="cources.html" class="text-white">Courses</a>
+                <a href="gallery.html" class="text-white">Gallery</a>
+                <a href="contact.html" class="text-white">Contact</a>
+            </div>
+        </div>
+        <div id="mobile-nav-content" class="md:hidden hidden">
+            <a href="/" class="block text-white p-4">Home</a>
+            <a href="about.html" class="block text-white p-4">About</a>
+            <a href="cources.html" class="block text-white p-4">Courses</a>
+            <a href="gallery.html" class="block text-white p-4">Gallery</a>
+            <a href="contact.html" class="block text-white p-4">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-white text-center py-20">
+        <div class="container mx-auto hero-content">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                Welcome to Our College
+                <!-- <span class="bg-yellow-400 text-black px-2 rounded">Highlight</span> -->
+            </h1>
+            <p class="text-lg md:text-2xl">
+                Embark on a fulfilling journey in healthcare with our 3-year (GNM) program
+            </p>
+            <a href="about.html">
+                <button class="mt-8 px-4 py-2 bg-white text-blue-500 font-semibold rounded-lg">Learn More</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Short Introduction Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto text-center px-6 md:px-12 lg:px-24">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">About Our College</h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-4">
+                Embark on a fulfilling journey in healthcare with our 3-year General Nursing and Midwifery (GNM)
+                program. Designed for individuals with a high school education and 40-50% marks in any background, our
+                GNM curriculum provides comprehensive training in nursing and midwifery practices. Join us at [College
+                Name] and become part of a vibrant community dedicated to nurturing compassionate and skilled healthcare
+                professionals.
+
+            </p>
+        </div>
+    </section>
+
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+            <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
+                src="images/college.jpeg">
+            <div class="text-center lg:w-2/3 w-full">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Gurukul Institute of Nursing
+                </h1>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Apply</button>
+                    <!-- <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Student Life Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto text-center px-6 md:px-12 lg:px-24">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Student Life</h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-10">
+                Discover a vibrant campus life that goes beyond the classroom. From sports and clubs to cultural events
+                and student organizations, there's something for everyone.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Activity 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="images/lab-1.jpeg" alt="Activity 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Best LAB</h3>
+                    <p class="text-gray-700 mb-4">Engage in various sports activities and recreational facilities to
+                        stay active and healthy.</p>
+                </div>
+                <!-- Activity 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="images/lab-2.jpeg" alt="Activity 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Cultural Events</h3>
+                    <p class="text-gray-700 mb-4">Participate in diverse cultural events that celebrate traditions and
+                        foster community spirit.</p>
+                </div>
+                <!-- Activity 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="images/lab-3.jpeg" alt="Activity 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Student Organizations</h3>
+                    <p class="text-gray-700 mb-4">Join various student organizations to develop leadership skills and
+                        pursue your interests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/2 md:w-full">
+                    <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                        <div
+                            class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">BSc Nursing</h2>
+                            <p class="leading-relaxed text-base">Our BSc Nursing program is designed to provide students
+                                with a comprehensive understanding of nursing principles and practices. Through a
+                                combination of classroom instruction, laboratory sessions, and clinical rotations,
+                                students develop the knowledge and skills necessary for a successful career in nursing.
+                            </p>
+                            <a href="cources.html" class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2 md:w-full">
+                    <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                        <div
+                            class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">GNM</h2>
+                            <p class="leading-relaxed text-base">Our GNM program prepares students to deliver
+                                compassionate and competent nursing care in a variety of healthcare settings. With a
+                                focus on practical training and clinical experience, students graduate ready to meet the
+                                challenges of modern healthcare.</p>
+                            <a href="cources.html" class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-grey-600 body-gray-200  mt-6">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="images/logo.png" height="50px" width="50px" alt="logo">
+                <span class="ml-3 text-xl">Gurukul Institute of Nursing</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2024 Gurukul —
+                <a href="https://techanirbankundu.github.io/aniterminal/" class="text-gray-600 ml-1"
+                    rel="noopener noreferrer" target="_blank">@AniTerminal</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="https://wa.me/+918100040601" class="text-gray-500">
+                    <i class="fa fa-whatsapp text-2xl" aria-hidden="true"></i><span class="m-3 mb-3">8100040601</span>
+                </a>
+                <a href="tel:8100040601" class="ml-3 text-gray-500">
+                    <i class="fa fa-phone-square text-2xl" aria-hidden="true"></i><span class="m-3">8100040601</span>
+                </a>
+
+            </span>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('nav-toggle').onclick = function () {
+            var navContent = document.getElementById('mobile-nav-content');
+            if (navContent.classList.contains('hidden')) {
+                navContent.classList.remove('hidden');
+            } else {
+                navContent.classList.add('hidden');
+            }
+        };
+    </script>
+</body>
+
+</html>
